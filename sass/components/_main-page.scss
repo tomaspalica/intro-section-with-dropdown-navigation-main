@@ -1,0 +1,38 @@
+.main-page {
+}
+.main-page__picture {
+}
+.main-page__content {
+  text-align: center;
+  font-family: "Epilogue";
+  font-weight: 500;
+  margin: auto;
+}
+.main-page__content p {
+  color: $Medium-Gray;
+}
+.main-page__button {
+  width: 105px;
+  height: 45px;
+  border-radius: 15px;
+  background-color: inherit;
+  border-color: $Almost-Black;
+  border-style: solid;
+  color: $Almost-White;
+  background-color: $Almost-Black;
+  font-family: "Epilogue";
+  font-weight: 700;
+}
+.main-page__button:hover {
+  color: $Almost-Black;
+  background-color: $Almost-White;
+  cursor: pointer;
+}
+.company-list {
+  padding: 0px;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,72 @@
+.nav {
+  display: flex;
+  align-items: center;
+
+}
+.nav_list-desktop {
+  display: none;
+}
+
+.nav_buttons-desktop {
+  display: none;
+}
+
+.nav_menu-icon {
+  width: 32px;
+  height: 18px;
+}
+// just for now
+.container img {
+  width: 100%;
+}
+//
+@media screen and (min-width: $Desktop-width) {
+  .nav {
+    justify-content: space-between;
+    width: 100%;
+    font-family: "Epilogue";
+    font-weight: 500;
+  }
+  .nav_menu-icon {
+    display: none;
+  }
+  .nav_list-desktop {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    padding-left: 0px;
+    justify-content: space-evenly;
+    color: $Medium-Gray;
+    align-items: center;
+  }
+  .nav_list-desktop li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .nav_list-desktop li:hover {
+    color: $Almost-Black;
+    cursor: pointer;
+  }
+  .nav_buttons-desktop {
+    display: flex;
+    gap: 10px;
+  }
+  .nav_button {
+    width: 105px;
+    height: 45px;
+    border-radius: 15px;
+    background-color: inherit;
+    border-color: $Medium-Gray;
+    border-style: solid;
+    color: $Medium-Gray;
+  }
+  .nav_button:hover {
+    color: $Almost-Black;
+    border-color: $Almost-Black;
+    cursor: pointer;
+  }
+  .nav_button--login {
+    border: none;
+  }
+}

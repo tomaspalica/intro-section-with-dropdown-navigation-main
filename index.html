@@ -10,6 +10,13 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
 
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
@@ -25,37 +32,72 @@
     </style>
   </head>
   <body>
-    <header>
-      <img src="images/logo.svg" />
-      <nav>
-        <ul>
-          <li>Features</li>
-          <li>Company</li>
+    <header class="header">
+      <img class="logo" src="images/logo.svg" />
+      <nav class="nav">
+        <ul class="nav_list-desktop">
+          <li>
+            Features
+            <svg width="10px" height="6px">
+              <use href="/images/icon-arrow-down.svg#arrow-down"></use>
+            </svg>
+          </li>
+          <li>
+            Company
+            <svg width="10px" height="6px">
+              <use href="/images/icon-arrow-down.svg#arrow-down"></use>
+            </svg>
+          </li>
           <li>Careers</li>
           <li>About</li>
         </ul>
-        <div>
-          <div>Login</div>
-          <div>Register</div>
+        <svg class="nav_menu-icon">
+          <use href="/images/icon-menu.svg#menu-icon"></use>
+        </svg>
+        <div class="nav_buttons-desktop">
+          <button class="nav_button nav_button--login">Login</button>
+          <button class="nav_button">Register</button>
         </div>
       </nav>
     </header>
-    <main>
-      <picture class="container">
+    <main class="main-page">
+      <picture class="container main-page__picture">
         <source
           srcset="images/image-hero-desktop.png"
-          media="(min-width: 375px)"
+          media="(min-width: 1024px)"
         />
         <img src="images/image-hero-mobile.png" alt="zdjęcie" />
       </picture>
 
-      <div>
+      <div class="main-page__content">
         <h1>Make remote work</h1>
         <p>
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
-        <button>Learn more</button>
+        <button class="main-page__button">Learn more</button>
+        <ul class="company-list">
+          <li>
+            <svg width="114" height="20">
+              <use href="/images/client-databiz.svg#databiz"></use>
+            </svg>
+          </li>
+          <li>
+            <svg width="73" height="36">
+              <use href="/images/client-audiophile.svg#audiophile"></use>
+            </svg>
+          </li>
+          <li>
+            <svg width="90" height="20">
+              <use href="/images/client-meet.svg#meet"></use>
+            </svg>
+          </li>
+          <li>
+            <svg width="83" height="24">
+              <use href="/images/client-maker.svg#maker"></use>
+            </svg>
+          </li>
+        </ul>
       </div>
     </main>
 
